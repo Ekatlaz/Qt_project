@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddRowDialog</class>
+ <widget class="QDialog" name="AddRowDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+ background: rgb(0, 170, 255)
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,3,1">
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="textLabel">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Enter Data About Weather</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="18" column="0">
+      <widget class="QLabel" name="cloud3pmlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cloud 3pm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="winddir9amlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindDir 9am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="locationLine"/>
+     </item>
+     <item row="21" column="0">
+      <widget class="QLabel" name="raintodaylabel">
+       <property name="text">
+        <string>Rain Today</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="pressure9amlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pressure 9am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="windgustspeedlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindGustSpeed</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="winddir3pmlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindDir 3pm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="cloud9amlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cloud 9am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QComboBox" name="winddir3pmcomboBox">
+       <item>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ENE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ESE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>N</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NNE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NNW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>W</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WNW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WSW</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="windspeed9amlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindSpeed 9am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="0">
+      <widget class="QLabel" name="temp3pmlabel">
+       <property name="text">
+        <string>Temp 3pm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="windspeed3pmlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindSpeed 3pm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="pressure3pmlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pressure 3pm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QDoubleSpinBox" name="windspeed9amdoubleSpinBox">
+       <property name="maximum">
+        <double>10000000000000.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="temp9amlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Temp 9am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="0">
+      <widget class="QLabel" name="raintomorrowlabel">
+       <property name="text">
+        <string>Rain Tomorrow</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="rainfallLabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Rainfall</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="mintempLabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>MinTemp</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QDoubleSpinBox" name="rainfallSpinBox"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="dateLabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Date</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="humididty3pmlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Humidity 3pm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="maxtempLabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>MaxTemp</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QDoubleSpinBox" name="maxtmpSpinBox"/>
+     </item>
+     <item row="9" column="2">
+      <widget class="QComboBox" name="winddir9amcomboBox">
+       <item>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ENE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ESE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>N</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NNE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NNW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>W</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WNW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WSW</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QComboBox" name="windgustdirCB">
+       <item>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ENE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ESE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>N</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NNE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NNW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SSW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>W</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WNW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>WSW</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QDoubleSpinBox" name="windgustspeedSpinB">
+       <property name="maximum">
+        <double>1000000000000.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="nameLabel"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="locationLabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Location</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="windgustdirrlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindGustDir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="0">
+      <widget class="QLabel" name="RISK_MMlabel">
+       <property name="text">
+        <string>RISK_MM</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="humidity9amlabel">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Humidity 9am</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QDoubleSpinBox" name="mintempSpinBox"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="nameLine">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>12</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>#</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="2">
+      <widget class="QDoubleSpinBox" name="windspeed3pmdoubleSpinBox"/>
+     </item>
+     <item row="21" column="2">
+      <widget class="QComboBox" name="raintodaycomboBox">
+       <item>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>No</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="23" column="2">
+      <widget class="QComboBox" name="raintomorrowcomboBox">
+       <item>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>No</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="13" column="2">
+      <widget class="QDoubleSpinBox" name="humidity9amdoubleSpinBox"/>
+     </item>
+     <item row="14" column="2">
+      <widget class="QDoubleSpinBox" name="humidity3pmdoubleSpinBox"/>
+     </item>
+     <item row="15" column="2">
+      <widget class="QDoubleSpinBox" name="pressure9amdoubleSpinBox"/>
+     </item>
+     <item row="16" column="2">
+      <widget class="QDoubleSpinBox" name="pressure3pmdoubleSpinBox"/>
+     </item>
+     <item row="17" column="2">
+      <widget class="QDoubleSpinBox" name="cloud9amdoubleSpinBox"/>
+     </item>
+     <item row="18" column="2">
+      <widget class="QDoubleSpinBox" name="cloud3pmdoubleSpinBox"/>
+     </item>
+     <item row="19" column="2">
+      <widget class="QDoubleSpinBox" name="temp9amdoubleSpinBox"/>
+     </item>
+     <item row="20" column="2">
+      <widget class="QDoubleSpinBox" name="temp3pmdoubleSpinBox"/>
+     </item>
+     <item row="22" column="2">
+      <widget class="QDoubleSpinBox" name="RISK_MMdoubleSpinBox"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="dateLine"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AddRowDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AddRowDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
